@@ -1,6 +1,6 @@
-﻿import { Store, createStore, compose, applyMiddleware } from 'redux';
+﻿import { createStore, applyMiddleware } from 'redux';
 import reduxThunk from 'redux-thunk';
-import { state, StateReducer } from './reducers';
+import { state} from './reducers';
 import logger from 'redux-logger';
 
 

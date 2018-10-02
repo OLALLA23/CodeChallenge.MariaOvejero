@@ -1,5 +1,4 @@
-﻿import { StateReducer } from '../../reducers';
-import { connect } from 'react-redux';
+﻿import { connect } from 'react-redux';
 import { Spinner } from './spinner';
 
 
