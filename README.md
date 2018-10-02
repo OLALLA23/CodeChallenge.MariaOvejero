@@ -4,4 +4,4 @@ CodeChallenge web made with typescript, react and redux. It shows a list of phon
 
 
 
-Clone the repository Navigate to CodeChallenge.MOvejeroL directory Run npm install Run npm start Open browser in http://localhost:3000
+Clone the repository Navigate to CodeChallenge.MariaOvejero-master\CodeChallenge.MOvejeroL\ClientApp directory Run npm install Run npm start Open browser in http://localhost:3000
