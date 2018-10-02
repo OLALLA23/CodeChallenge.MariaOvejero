@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CodeChallenge.MOvejero.Shared.Model\CodeChallenge.MOvejero.Shared.Model.csproj" />
+    <ProjectReference Include="..\CodeChallenge.MOvejero.Shared.Model\CodeChallenge.MOvejeroL.Shared.Model.csproj" />
   </ItemGroup>
 
 </Project>

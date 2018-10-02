@@ -5,9 +5,9 @@ VisualStudioVersion = 15.0.27924.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeChallenge.MOvejeroL", "CodeChallenge.MOvejeroL\CodeChallenge.MOvejeroL.csproj", "{61582E17-C311-44C5-A02F-7ADC170A7546}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeChallenge.MOvejero.Shared.Model", "CodeChallenge.MOvejero.Shared.Model\CodeChallenge.MOvejero.Shared.Model.csproj", "{CDCD4A01-EE33-4BBA-BD73-88196B4B23C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeChallenge.MOvejeroL.Shared.Model", "CodeChallenge.MOvejero.Shared.Model\CodeChallenge.MOvejeroL.Shared.Model.csproj", "{CDCD4A01-EE33-4BBA-BD73-88196B4B23C0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeChallenge.MOvejero.API", "CodeChallenge.MOvejero.API\CodeChallenge.MOvejero.API.csproj", "{F018214C-F4DF-4979-9BB3-DF292A18A0F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeChallenge.MOvejeroL.API", "CodeChallenge.MOvejero.API\CodeChallenge.MOvejeroL.API.csproj", "{F018214C-F4DF-4979-9BB3-DF292A18A0F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
