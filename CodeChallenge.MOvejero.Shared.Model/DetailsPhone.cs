@@ -11,7 +11,6 @@ namespace CodeChallengeMol.Shared.Model
         public string IdPhone { get; set; }
         public string NamePhone { get; set; }
         public string Image { get; set; }
-        public string Color { get; set; }
         public double Price { get; set; }
         public string Description { get; set; }
     }

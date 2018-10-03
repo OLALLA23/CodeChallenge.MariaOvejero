@@ -5,12 +5,10 @@ import { PhoneItem } from './phoneItem';
 
 
 export class listPhone extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
-    componentWillMount() {
-        this.props.getPhones();
+   
+    componentWillMount = () =>{
+        const { getPhones } = this.props;
+        getPhones();
         this.setState({
             selectPhone: '',
             activeLink: 'listPhone',
@@ -24,8 +22,9 @@ export class listPhone extends React.Component {
     }
 
     shouldComponentUpdate(nextProps, nextState) {
-
-        return !shallowequal(this.props, nextProps) || !shallowequal(this.state, nextState);
+        const { props } = this.props;
+        const { state } = this.state;
+        return !shallowequal(props, nextProps) || !shallowequal(state, nextState);
     }
 
     phoneSelect = (IdPhone) => {
@@ -36,10 +35,12 @@ export class listPhone extends React.Component {
     }
 
     getPhoneById = (IdPhone) => {
-        return this.props.phones.filter(x => x.IdPhone === IdPhone)[0];
+        const { phones } = this.props;
+        return phones.filter(x => x.IdPhone === IdPhone)[0];
     }
 
     renderList = () => {
+        const { phones } = this.props;
         return (
             <div>
                 <div className="jumbotron jumbo">
@@ -58,8 +59,8 @@ export class listPhone extends React.Component {
                         <div className="caja2" >
                             <div className="">
                                 <div>
-                                    {this.props.phones.map((phones) => {
-                                        return (<div className="cajadetails"><PhoneItem phones={phones} changeHandler={this.phoneSelect} key={phones.IdPhone} /></div>);
+                                    {phones.map((phones) => {
+                                        return (<div className="cajadetails" key={phones.IdPhone}><PhoneItem key={phones.IdPhone} phones={phones} changeHandler={this.phoneSelect} /></div>);
                                     })}
                                 </div>
                             </div>
@@ -70,13 +71,13 @@ export class listPhone extends React.Component {
         );
     }
     renderComponentItem = () => {
-        if (this.state.activeLink === 'xx') {
-            return (
-
+        const { activeLink, selectPhone } = this.state;
+        if (activeLink === 'xx') {
+            return (                
                 <div>
                     {this.renderList()}
                     <div>
-                        <PhoneDetails phone={this.getPhoneById(this.state.selectPhone)} cancelHandler={this.stateCancel} />
+                        <PhoneDetails phone={this.getPhoneById(selectPhone)} cancelHandler={this.stateCancel} />
                     </div>
                 </div>
             );
@@ -90,9 +91,10 @@ export class listPhone extends React.Component {
         }
     }
 
-    render() {
+    render = () =>{
+        const { phones } = this.props;
 
-        if (this.props.phones.length > 0) {
+        if (phones.length > 0) {
             return (this.renderComponentItem())
 
         } else {

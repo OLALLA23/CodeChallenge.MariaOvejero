@@ -3,27 +3,25 @@
 
 
 export class PhoneDetails extends React.Component{
-    constructor(props) {
-        super(props);
-    }
 
     clickHandler = () => {
-        this.props.cancelHandler();
+        const { cancelHandler } = this.props;
+        cancelHandler();
     }
 
-    render() {
-
+    render = () => {
+        const { phone } = this.props;
         return (
             <div className="container">
                 <div className="divider-30"></div>
                 <div className="row">
                     <div className="caja2" >
                         <div className="cajadetails">
-                            <h1 ><strong>{this.props.phone.NamePhone}</strong></h1>
+                            <h1 ><strong>{phone.NamePhone}</strong></h1>
                             <div>
-                                <img className="img" src={this.props.phone.Image} alt="" />
+                                <img className="img" src={phone.Image} alt="" />
                             </div>
-                            <b>{this.props.phone.Description}</b>
+                            <b>{phone.Description}</b>
                             <div className="divider-30"></div>
                             <div>
                                 <button className="btn btn-grey w40 "

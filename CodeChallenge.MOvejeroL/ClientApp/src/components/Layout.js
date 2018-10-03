@@ -4,11 +4,12 @@ import { SpinnerContainer } from './spinnerContainer/spinnerContainer';
 export class Layout extends Component {
   displayName = Layout.name
 
-  render() {
+    render = () => {
+        const { children } = this.props
     return (
         <div className='container-fluid'>
             <SpinnerContainer />
-            {this.props.children}
+            {children}
         </div>
     );
   }

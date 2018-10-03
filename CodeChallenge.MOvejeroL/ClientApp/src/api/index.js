@@ -8,9 +8,8 @@ const GetDetailsPhones = () => {
 };
 
 const mapPhoneModel = (response)=> {
-
     const result = [];
-    response.map((item) => {
+    response.forEach((item) => {
         const phoneMap = {
             IdPhone: item.idPhone,
             NamePhone: item.namePhone,

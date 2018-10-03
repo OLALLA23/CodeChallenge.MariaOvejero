@@ -7,8 +7,8 @@ export const httpReducer = (state = true, action) => {
             return handleHttpStart(state, action.payload);
         case actiontypes.HTTP_CALL_END:
             return handleHttpEnd(state, action.payload);
+        default: return state;
     }
-    return state;
 };
 
 const handleHttpStart = (state, payload) => {

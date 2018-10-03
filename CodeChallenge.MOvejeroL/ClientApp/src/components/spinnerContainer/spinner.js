@@ -1,15 +1,14 @@
 ﻿import * as React from "react";
 
 export class Spinner extends React.Component{
-    constructor(props) {
-        super(props);
-    }
+     
+    render = () => {
+        const { httpLoading } = this.props;
 
-    render() {
-        if (this.props.httpLoading) {
+        if (httpLoading) {
             return (
                 <div className="spinner">
-                    <img src="https://loading.io/spinners/whirl/index.rotate-whirl-ajax-vortex-spinner.svg" />
+                    <img src="https://loading.io/spinners/whirl/index.rotate-whirl-ajax-vortex-spinner.svg" alt="spinner" />
                 </div>)
         }
         else {

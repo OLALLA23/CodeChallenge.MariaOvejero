@@ -6,8 +6,8 @@ export const phoneReducer = (state = [], action) => {
     switch (action.type) {
         case actiontypes.LOAD_LIST_PHONE:
             return handleloadListPhoneAction(state, action.payload);
+        default: return state;
     }
-    return state;
 };
 
 const handleloadListPhoneAction = (state, payload) => {
