@@ -22,6 +22,5 @@ import { BrowserRouter } from 'react-router-dom';
         rootElement
     );
 }
-
 renderApp();
 

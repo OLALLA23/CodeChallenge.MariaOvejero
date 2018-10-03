@@ -60,7 +60,7 @@ export class listPhone extends React.Component {
                             <div className="">
                                 <div>
                                     {phones.map((phones) => {
-                                        return (<div className="cajadetails" key={phones.IdPhone}><PhoneItem key={phones.IdPhone} phones={phones} changeHandler={this.phoneSelect} /></div>);
+                                        return (<div className="cajadetails" key={phones.IdPhone}><PhoneItem phones={phones} changeHandler={this.phoneSelect} /></div>);
                                     })}
                                 </div>
                             </div>
