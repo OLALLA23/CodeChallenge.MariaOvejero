@@ -1,5 +1,5 @@
 # CodeChallenge.MariaOvejero
-CodeChallenge web made with typescript, react and redux. It shows a list of phones and let you see details of the phone you selected. It gets the data from a netcore API.
+CodeChallenge web made with javascript, react and redux. It shows a list of phones and let you see details of the phone you selected. It gets the data from a netcore API.
 
 
 
